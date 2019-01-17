@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6fff3"
+    tools:context=".show_bill">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fci_pharmacy"
+
+        android:layout_marginLeft="40dp"
+        android:textSize="50sp"
+
+        android:textColor="#000"/>
+
+    <ListView
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/text">
+
+    </ListView>
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bill : "
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90sp"
+        android:layout_below="@+id/l1"
+        android:textSize="55sp"/>
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:text="make order"
+        android:textSize="25sp"
+        android:layout_marginLeft="90sp"
+       android:onClick="btn_order"
+        android:textAllCaps="false"/>
+</RelativeLayout>

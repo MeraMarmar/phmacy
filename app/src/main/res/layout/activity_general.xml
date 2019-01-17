@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".general">
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<EditText
+    android:id="@+id/edit"
+    android:layout_width="244dp"
+    android:layout_height="wrap_content"
+    android:hint="the name of medicine"
+    android:textSize="21sp" />
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:hint="potion"
+            android:textSize="21sp" />
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:hint="num"
+            android:textSize="21sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/but1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_add_shopping_cart"
+        android:text="add"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/liner"
+        android:textStyle="bold"
+        android:background="#90B4FF"
+        android:textAllCaps="false"
+        android:textSize="24sp" />
+    <Button
+        android:id="@+id/btnDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_delete_forever"
+        android:text="delete items"
+        android:layout_marginLeft="190dp"
+        android:layout_below="@+id/liner"
+        android:textStyle="bold"
+        android:background="#90B4FF"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="288dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/but1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#90B4FF"
+        android:choiceMode="multipleChoice" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_below="@+id/list"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:background="#90B4FF"
+        android:drawableRight="@drawable/ic_send_black_24dp"
+        android:drawablePadding="22dp"
+        android:onClick="go_next"
+        android:padding="10dp"
+        android:text="Go Next"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/bill"
+        android:textColor="#fff"
+        android:textSize="40sp"/>
+</RelativeLayout>

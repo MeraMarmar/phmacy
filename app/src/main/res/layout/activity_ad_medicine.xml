@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".ad_medicine">
+
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/editprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="price"
+        android:inputType="number"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/editpotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="potion"
+        android:inputType="number"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/editnameofcompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name Of Company"
+        android:inputType="textPersonName"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/editQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/editkind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="kind"
+        android:inputType="textPersonName"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/editdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Production date and validity"
+        android:inputType="date"
+        android:textColorHint="#fff" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/oval_shap"
+        android:baselineAligned="false"
+        android:drawableRight="@drawable/ic_playlist_add_black_24dp"
+        android:drawablePadding="22dp"
+        android:onClick="add_med"
+        android:padding="10dp"
+        android:text="add"
+        android:textAllCaps="false"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listdata"
+        android:hint="Enter the id"
+        android:textColorHint="#fff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/oval_shap"
+            android:drawableRight="@drawable/ic_file_download"
+            android:onClick="UpData"
+            android:padding="10dp"
+            android:text="UpData "
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="224dp"
+            android:background="@drawable/oval_shap"
+            android:drawableRight="@drawable/ic_delete_forever"
+            android:onClick="delete"
+            android:padding="10dp"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>
